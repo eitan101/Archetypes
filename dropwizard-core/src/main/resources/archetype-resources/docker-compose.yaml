@@ -1,0 +1,8 @@
+version: "3"
+services:
+  ${artifactId}:
+    build: .
+    image: ${artifactId}:${version}
+    ports:
+      - "8080"
+      - "8081"

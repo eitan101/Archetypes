@@ -10,8 +10,15 @@
       </includes>
     </fileSet>
     <fileSet filtered="true" encoding="UTF-8">
+      <directory>kubernetes</directory>
+      <includes>
+        <include>**/*.yaml</include>
+      </includes>
+    </fileSet>
+    <fileSet filtered="true" encoding="UTF-8">
       <directory></directory>
       <includes>
+        <include>docker-compose.yaml</include>
         <include>Dockerfile</include>
       </includes>
     </fileSet>

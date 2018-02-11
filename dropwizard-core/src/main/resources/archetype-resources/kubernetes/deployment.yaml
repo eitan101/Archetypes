@@ -1,0 +1,21 @@
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
+kind: Deployment
+metadata:
+  name: ${artifactId}
+spec:
+  selector:
+    matchLabels:
+      app: lbl-${artifactId}
+  replicas: 2
+  template: 
+    metadata:
+      labels:
+        app: lbl-${artifactId}
+    spec:
+      containers:
+      - name: cont-${artifactId}
+        image: ${artifactId}:${version}
+        ports:
+        - containerPort: 8080
+
+
