@@ -1,5 +1,5 @@
-apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 kind: Deployment
+apiVersion: apps/v1 # for versions before 1.9.0 use apps/v1beta2
 metadata:
   name: ${artifactId}
 spec:
@@ -17,5 +17,16 @@ spec:
         image: ${artifactId}:${version}
         ports:
         - containerPort: 8080
-
-
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: ${artifactId}
+spec:
+  selector:
+    app: lbl-${artifactId}
+  ports:
+  - protocol: TCP
+    port: 8080
+    targetPort: 8080
+  type: LoadBalancer

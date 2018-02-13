@@ -8,6 +8,7 @@
     <modules>
         <module>jdk9-app</module>
         <module>dropwizard-core</module>
+        <module>kafka-app</module>
     </modules>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
