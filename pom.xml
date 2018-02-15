@@ -7,6 +7,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>jdk9-app</module>
+        <module>dropwizard-app</module>
         <module>dropwizard-core</module>
         <module>kafka-app</module>
     </modules>

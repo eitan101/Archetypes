@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>com.liveperson.archetypes</groupId>
-  <artifactId>kafka-app</artifactId>
+  <artifactId>dropwizard-app</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>maven-archetype</packaging>
 
-  <name>kafka-app</name>
+  <name>dropwizard-app</name>
 
   <build>
     <extensions>
